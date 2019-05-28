@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesTag1"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:text="Calories/day"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaintainValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaintainValue" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesTag2"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:text="Calories/day"
+        app:layout_constraintStart_toStartOf="@+id/textViewMildLossValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMildLossValue" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesTag3"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:text="Calories/day"
+        app:layout_constraintStart_toStartOf="@+id/textViewLossValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLossValue" />
+
+    <TextView
+        android:id="@+id/textViewCaloriesTag4"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:text="Calories/day"
+        app:layout_constraintStart_toStartOf="@+id/textViewExtremeLossValue"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExtremeLossValue" />
+
+    <TextView
+        android:id="@+id/textView100Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMaintainValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaintainValue" />
+
+    <TextView
+        android:id="@+id/textView90Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMildLossValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewMildLossValue" />
+
+    <TextView
+        android:id="@+id/textView80Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewLossValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewLossValue" />
+
+    <TextView
+        android:id="@+id/textView66Tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="66%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewExtremeLossValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewExtremeLossValue" />
+
+    <TextView
+        android:id="@+id/textViewMaintain"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Maintain Weight"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal" />
+
+    <TextView
+        android:id="@+id/textViewMildLoss"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Mild Weight Loss"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaintain"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaintain" />
+
+    <TextView
+        android:id="@+id/textViewLoss"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Weight Loss"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewMildLoss"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMildLoss" />
+
+    <TextView
+        android:id="@+id/textViewMaintainExtremeLoss"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Extreme Weight Loss"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewLoss"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoss" />
+
+    <TextView
+        android:id="@+id/textViewMaintainValue"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMaintain"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaintain"
+        tools:text="2500" />
+
+    <TextView
+        android:id="@+id/textViewLossValue"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewLoss"
+        app:layout_constraintStart_toEndOf="@+id/textViewLoss"
+        tools:text="1900" />
+
+    <TextView
+        android:id="@+id/textViewExtremeLossValue"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMaintainExtremeLoss"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaintainExtremeLoss"
+        tools:text="1500" />
+
+    <TextView
+        android:id="@+id/textViewMildLossValue"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewMildLoss"
+        app:layout_constraintStart_toEndOf="@+id/textViewMildLoss"
+        tools:text="2200" />
+
+</android.support.constraint.ConstraintLayout>
